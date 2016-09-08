@@ -1,11 +1,11 @@
 class Thankios < Formula
   desc "Acknowlegements Settings.bundle generator"
   homepage "https://github.com/uny/Thankios"
-  url "https://github.com/recruit-lifestyle/Thankios/archive/v2.0.0.tar.gz"
-  version "2.0.0"
-  sha256 "62d9c1329cacfb4e5443593fd6172ab4f32a353bbe0ee39c949d0eb4b79476fa"
+  url "https://github.com/recruit-lifestyle/Thankios/archive/v2.1.0.tar.gz"
+  version "2.1.0"
+  sha256 "2a6d20bfcd4b3c38dd277c62b58c6eff1601a14c1c1f2836771db723f96b7e3e"
 
-  depends_on :xcode => ["7.3.1", :build]
+  depends_on :xcode => ["8.0", :build]
 
   def install
     system "make", "prefix_install", "PREFIX=#{prefix}"
